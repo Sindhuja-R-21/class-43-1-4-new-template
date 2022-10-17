@@ -169,6 +169,8 @@ handleResetButton() {
 showLeaderboard() {
   var leader1, leader2;
   var players = Object.values(allPlayers);
+  
+   //Player1 could be winner or untill we reach end point(both rank will be 0)
   if (
     (players[0].rank === 0 && players[1].rank === 0) ||
     players[0].rank === 1
